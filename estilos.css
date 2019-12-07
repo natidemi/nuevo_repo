@@ -1,0 +1,107 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+a { text-decoration: none; color: inherit; }
+a:hover { color: rgb(228, 216, 113); }
+
+body {background-color: black; }
+
+h3, .espacios {padding-bottom: 20px;
+padding-top: 20px;}
+
+header nav { float: right; padding-top: 15px; }
+
+	nav ul li {
+	font-family: 'Poppins', sans-serif; 
+	font-size: 20px; 
+	color: #E8F6E7;
+	display: inline-block;
+	text-decoration: none;
+	padding: 8px;}
+
+	nav ul li ul {display: none; }
+	nav ul li:hover ul {display: block;
+	position: absolute;
+	align-items: center;
+	background-color: rgb(202, 188, 60)}
+
+	nav ul li ul li { display: block; cursor: pointer;  }
+	nav ul li ul li:hover { background-color: rgb(204, 196, 120); }
+
+
+.oso {padding: 10px;
+	margin-left: 10px;
+	display: inline-block;
+transform: rotate(-45deg);}
+
+.banda {padding-right: 100px;
+  padding-bottom: 50px;
+  padding-left: 100px;}
+
+
+.txt {color: #F0F4EF;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px;
+	text-align: center;}
+
+.stan {color: red;
+	font-family: 'Poppins', sans-serif;
+	font-size: 15px; }
+
+
+.art {	width: 350px; height: 230px;
+	display: inline-block;
+	position: relative;
+	box-sizing: content-box;
+	z-index: -1}
+	
+	.art:not(:first-child) { padding-left: 10%; }
+
+.header-aside-left { display: inline-block; }
+.header-aside-left h1 { display: inherit; padding-left: 10px; vertical-align: top; padding-top: 30px; 
+
+}
+
+
+div.img-container { margin-top: 50px; text-align: center; }
+
+
+.gradient {background:  linear-gradient(to top, #000, #d6d6c2); margin: 30px; 
+	padding-top: 1px;
+	-moz-border-radius: 31px 31px 31px 31px;
+	-webkit-border-radius: 31px 31px 31px 31px;}
+
+
+	.gradient-form {background: url("../imagenes/glaston.jpg"); background-repeat: no-repeat; background-size: cover;
+	margin: 30px; 
+	padding-top: 1px;
+	-moz-border-radius: 31px 31px 31px 31px;
+	-webkit-border-radius: 31px 31px 31px 31px;}
+
+
+
+
+@-webkit-keyframes fadeInLeft {from {opacity: 0; -webkit-transform: translate3d(-100%, 0, 0); transform: translate3d(-100%, 0, 0);}
+to {opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0);}}
+
+@keyframes fadeInLeft {from {opacity: 0; -webkit-transform: translate3d(-100%, 0, 0); transform: translate3d(-100%, 0, 0);} 
+to {opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0);}}
+
+.fadeInLeft {-webkit-animation-name: fadeInLeft; animation-name: fadeInLeft;}
+
+.animacion {animation-name: fadeInLeft;
+ animation-iteration-count: 8s;
+ animation-timing-function: ease-in;
+ animation-duration: 2s;
+ animation-delay: 0s;}
+
+
+@-webkit-keyframes fadeIn {from {opacity: 0;} to {opacity: 1;}}
+
+@keyframes fadeIn {from {opacity: 0;} to {opacity: 1;}}
+
+.fadeIn {-webkit-animation-name: fadeIn; animation-name: fadeIn;}
+
+.entradafoto {animation-name: fadeIn;
+ animation-iteration-count: 1s;
+ animation-timing-function: ease-in;
+ animation-duration: 2s;
+ animation-delay: 0s;}
