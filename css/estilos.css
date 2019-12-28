@@ -2,15 +2,19 @@
 a { text-decoration: none; color: inherit; }
 a:hover { color: rgb(228, 216, 113); }
 
+
+header {padding-right: 32px;}
 body {background-color: black; }
 
+/*espacios es para el formulario de contacto*/
 h3, .espacios {padding-bottom: 20px;
 padding-top: 20px;}
 
-header nav { float: right; padding-top: 15px; }
+/*menu header*/ 
 
-	nav ul li {
-	font-family: 'Poppins', sans-serif; 
+header nav { float: right; padding-top: 15px;}
+
+	nav ul li { 
 	font-size: 20px; 
 	color: #E8F6E7;
 	display: inline-block;
@@ -26,25 +30,29 @@ header nav { float: right; padding-top: 15px; }
 	nav ul li ul li { display: block; cursor: pointer;  }
 	nav ul li ul li:hover { background-color: rgb(204, 196, 120); }
 
-
 .oso {padding: 10px;
 	margin-left: 10px;
-	display: inline-block;}
-
-.banda {padding-right: 100px;
-  padding-bottom: 50px;
-  padding-left: 100px;}
-
+	display: inline-block;
+	width: 80px; 
+	height: 80px;}
 
 .txt {color: #F0F4EF;
-	font-family: 'Poppins', sans-serif;
 	font-size: 15px;
 	text-align: center;}
 
-.stan {color: red;
-	font-family: 'Poppins', sans-serif;
-	font-size: 15px; }
+/*cierre menu header*/
 
+
+/*FOOTER*/
+footer .txt {text-align: left;}
+
+.logofooter {width: 135px; height: 20px; margin-left: 10px; float:right; }
+.footer {padding: 30px;}
+
+/*fin footer*/
+
+
+/*IMÀGENES ART*/
 
 .art {	width: 350px; height: 230px;
 	display: inline-block;
@@ -59,14 +67,76 @@ header nav { float: right; padding-top: 15px; }
 
 }
 
+/*ponerle sass porque lo voy a usar en varios*/
+div.img-container {display: grid; 
+					grid-template-columns: 1350px;
+   					grid-template-rows: 450px 450px 450px; 	
+					margin-top: 50px; 
+					}
 
-div.img-container { margin-top: 50px; text-align: center; }
+.boxindex1 {background: url("../imagenes/banda.jpg");
+			background-repeat: no-repeat; 
+			background-size: cover; 
+			height: 450px;}
 
+.boxindex2 {background: url(http://api.thumbr.it/whitenoise-361x370.png?background=050505ff&noise=626262&density=9&opacity=90);
+			background-repeat: no-repeat; 
+			background-size: cover; 
+			height: 450px;}
 
-.gradient {background:  linear-gradient(to top, #000, #d6d6c2); margin: 30px; 
+.boxindex3 {background: url("../imagenes/live3.jpg");
+			background-repeat: no-repeat; 
+			background-size: cover; 
+			height: 450px;}
+
+h2.center {text-align: center;
+			margin-top: 25px;
+			color: white;
+			margin-bottom: 25px;}
+
+.flexindex {display: flex;
+			flex-flow: row nowrap;
+		  	justify-content: space-between;
+			align-items: center;
+			margin: 20px 20px 20px 20px;}	
+
+.flexindex p {width: 100%;
+	text-align: center;
+	/*display: none*/
+	font-size: 20px;
+	color: red;
+	position: absolute;
+	left: 17%;
+	top: 280%;
+	transform: translate(-50%, -50%);}
+
+ .flexindex:hover img {
+	opacity: 0.5;}
+
+ .flexindex:hover p{
+	display: block;}
+
+.flexindex img {width: 360px; 
+				height: 315px;}
+
+/*tour index*/
+
+	.tour li { 
+	font-size: 18px; 
+	color: #E8F6E7;
+	padding: 8px;
+	margin-left: 45px;
+	margin-bottom: 10px;
+	border-bottom-style: outset;
+	list-style: none;
+}
+
+/*fin index*/
+
+/*.gradient {background:  linear-gradient(to top, #000, #d6d6c2); margin: 30px; 
 	padding-top: 1px;
 	-moz-border-radius: 31px 31px 31px 31px;
-	-webkit-border-radius: 31px 31px 31px 31px;}
+	-webkit-border-radius: 31px 31px 31px 31px;}*/
 
 
 	.gradient-form {background: url("../imagenes/glaston.jpg"); background-repeat: no-repeat; background-size: cover;
@@ -89,7 +159,7 @@ to {opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(
 .animacion {animation-name: fadeInLeft;
  animation-iteration-count: 8s;
  animation-timing-function: ease-in;
- animation-duration: 2s;
+ animation-duration: 1s;
  animation-delay: 0s;}
 
 
@@ -112,7 +182,6 @@ to {opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(
 -webkit-border-radius: 20px 20px 20px 20px;}
 
  .txtdisco {color: red;
-font-family: 'Poppins', sans-serif;
 font-size: 25px;
 letter-spacing: 5px;
 position: absolute; 
@@ -126,7 +195,6 @@ transform: translate(-50%, -50%); }
 padding-right: 20px; }
 
 .infodisco {color: #F0F4EF;
-font-family: 'Poppins', sans-serif;
 font-size: 16px;
 position: absolute;
 padding: 62px 75px;
@@ -135,7 +203,6 @@ display: inline-block; }
 
 .track {margin-left: -235px; margin-top: -190px; 
 color: #F0F4EF;
-font-family: 'Poppins', sans-serif;
 font-size: 16px;
 position: absolute;
 line-height: 30px; 
@@ -164,6 +231,99 @@ display: inline-block;
 	height: 100%; 
 padding: 20px 0px;}
 
-.logofooter {padding: 12px;
+
+
+
+
+	/*Celular*/
+@media only screen and (max-width: 400px) {
+
+div {display: flex;}
+
+div.img-container {display: grid; 
+					grid-template-columns: 1350px;	
+					margin-top: 50px; 
+					}
+
+div.menubar {display: none; }
+header nav ul {overflow: hidden; }
+header nav ul li { float: left; }
+
+.btnmenu
+.icon
+
+.boxindex1 {background: url("../imagenes/glaston.jpg");
+			background-repeat: no-repeat; 
+			background-size: cover;}
+
+.banda { height: 310px;
+padding-bottom: 0px;
+padding-right: 0px;
+padding-left: 0px;}
+
+
+
+.oso {padding: 10px;
 	margin-left: 10px;
-	float:right;}
+	display: inline-block;
+	width: 80px; 
+	height: 80px;
+align-content: center;}
+
+
+
+
+
+
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}

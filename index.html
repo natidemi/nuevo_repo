@@ -3,21 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Radiohead</title>
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="imagenes/logo-favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Alatsi|Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="header-aside-left">
-         <a href=""index.html> <img class="oso" src="imagenes/oso.jpg" alt="logo radiohead" width="80px" height="80px"></a>
+        <div class="header-aside-left topnav">
+         <a href="index.html"> <img class="oso" src="imagenes/oso.jpg" alt="logo radiohead"></a>
             <h1 class="txt inlineblock animacion">Home</h1>
         </div>
 
-<nav>  
+<nav id="myLinks">  
     <ul>
-        <li><a href="index.html">Home</a></li> 
+        <li><a href="index.html"><i class="fas fa-house-damage"></i></i>Home</a></li> 
         <li><a href="discografia.html">Discography</a></li>
         <li><a href="art.html">Art</a></li>
          <li><a href="tour.html">Tour</a>
@@ -30,16 +34,62 @@
             <li><a href="contacto.html">Contact Us</a></li>
         <li><a href="store.html">Store</a></li>
             </li>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
 </ul>
 </nav>
 
 </header>
 
-<div class="gradient">
-<div class="img-container">
-    <img class="banda"  src="imagenes/banda.jpg" alt="isologo radiohead">
-</div>
+<div>
+    <div class="img-container boxindex1">
+    </div>
 </div>
 
+<div>
+    <div class="img-container boxindex2">
+    <div>
+        <h2 class="center">Latest <span>News</span></h2>
+        <div class="flexindex">
+            <a href="https://consequenceofsound.net/2019/12/radiohead-entire-discography-youtube-stream/"> 
+            <img src="imagenes/index/news1.jpg" alt="thom yorke singing">
+          <!--   <p>Radiohead upload their entire discography to YouTube</p></a> -->
+        
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YNYJ_BJJbzI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            
+            <a href="https://www.billboard.com/articles/columns/rock/8545210/radiohead-ed-obrien-debut-solo-album-teases-single-brasil"> 
+            <img src="imagenes/index/Edobrien.jpg" alt="Radiohead's Ed O'Brien playing guitar"> 
+ <!--            <p>Radiohead’s Ed O’Brien is releasing a new single this week</p></a> </div> -->
+        </div> </div> 
+ 
+</div>
+
+<div>
+    <div class="img-container boxindex3">
+        <div>
+            <h2 class="center">Upcoming <span>Shows</span></h2>
+        
+            <ul class="tour">
+                <li>Monday 30 March 2020 Radio City Music Hall, New York (NYC), NY, US</li>
+                <li>Tuesday 31 March 2020 Manhattan Center Hammerstein Ballroom, New York (NYC), NY, US</li>
+                <li>Wednesday 01 April 2020 Manhattan Center Hammerstein Ballroom, New York (NYC), NY, US</li>
+                <LI>Saturday 04 April 2020 United Center, Chicago, IL, US</LI>
+                <li>Sunday 05 April 2020 Xcel Energy Center, St. Paul, MN, US</li>
+                <li>Wednesday 08 April 2020 Mission Ballroom, Denver, CO, US</li>
+            </ul>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+
+<img class="logofooter" src="imagenes/footer.png" alt="logo radiohead escrito">
+<p class="txt"> W.A.S.T.E. Information Service ~ Since 1991</p>
+</footer>
 </body>
 </html>
