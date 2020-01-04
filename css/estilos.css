@@ -3,8 +3,9 @@ a { text-decoration: none; color: inherit; }
 a:hover { color: rgb(228, 216, 113); }
 
 
-header {padding-right: 32px;}
+header {background-color: white;}
 body {background-color: black; }
+span {color: red;}
 
 /*espacios es para el formulario de contacto*/
 h3, .espacios {padding-bottom: 20px;
@@ -14,12 +15,13 @@ padding-top: 20px;}
 
 header nav { float: right; padding-top: 15px;}
 
-	nav ul li { 
-	font-size: 20px; 
+	li { 
+	font-size: 17px; 
 	color: #E8F6E7;
 	display: inline-block;
 	text-decoration: none;
-	padding: 8px;}
+	padding: 7px;
+	margin-right: 5px;}
 
 	nav ul li ul {display: none; }
 	nav ul li:hover ul {display: block;
@@ -33,12 +35,11 @@ header nav { float: right; padding-top: 15px;}
 .oso {padding: 10px;
 	margin-left: 10px;
 	display: inline-block;
-	width: 80px; 
+	width: 90px; 
 	height: 80px;}
 
-.txt {color: #F0F4EF;
-	font-size: 15px;
-	text-align: center;}
+.txt {color: black;
+	font-size: 15px;}
 
 /*cierre menu header*/
 
@@ -47,7 +48,7 @@ header nav { float: right; padding-top: 15px;}
 footer .txt {text-align: left;}
 
 .logofooter {width: 135px; height: 20px; margin-left: 10px; float:right; }
-.footer {padding: 30px;}
+.footer {padding: 30px; background-color: white; margin-top: 70px;}
 
 /*fin footer*/
 
@@ -63,7 +64,7 @@ footer .txt {text-align: left;}
 	.art:not(:first-child) { padding-left: 10%; }
 
 .header-aside-left { display: inline-block; }
-.header-aside-left h1 { display: inherit; padding-left: 10px; vertical-align: top; padding-top: 30px; 
+.header-aside-left h1 { display: inherit; vertical-align: top; padding-top: 30px; 
 
 }
 
@@ -82,12 +83,14 @@ div.img-container {display: grid;
 .boxindex2 {background: url(http://api.thumbr.it/whitenoise-361x370.png?background=050505ff&noise=626262&density=9&opacity=90);
 			background-repeat: no-repeat; 
 			background-size: cover; 
-			height: 450px;}
+			height: 390px;
+			width: auto;}
 
 .boxindex3 {background: url("../imagenes/live3.jpg");
 			background-repeat: no-repeat; 
 			background-size: cover; 
-			height: 450px;}
+			height: 450px;
+			margin-top: 50px;}
 
 h2.center {text-align: center;
 			margin-top: 25px;
@@ -175,18 +178,18 @@ to {opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(
  animation-duration: 2s;
  animation-delay: 0s;}
 
- .tapa {width: 250px; height: 250px; margin-left: 30px; margin-top: 50px; 
+ .tapa {width: 250px; margin-left: -45px; margin-top: 50px; 
 -webkit-border-radius: 20px 20px 20px 20px;}
 
- .tapadisco {width: 300px; height: 300px; margin-left: 20px; margin-top: 45px; 
+ .tapadisco {width: 300px; height: 300px; margin-left: 18px; margin-top: 45px; 
 -webkit-border-radius: 20px 20px 20px 20px;}
 
  .txtdisco {color: red;
 font-size: 25px;
 letter-spacing: 5px;
 position: absolute; 
-top: 52%;
-left: 55%;
+top: 43%;
+left: 18%;
 transform: translate(-50%, -50%); }
 
 .contenedorcd { position: relative;
@@ -233,97 +236,16 @@ padding: 20px 0px;}
 
 
 
+/*ART*/
+
+.centrado {margin-left: 28px; width: 1288px; margin-top: 55px;}
+.stanley {width: 356px; height: 220px; margin-left: 230px;}
+.botones {margin-top: 25px; margin-left: 70px;}
+.car {width: 926px;}
 
 
-	/*Celular*/
-@media only screen and (max-width: 400px) {
+/*INDEX*/
 
-div {display: flex;}
-
-div.img-container {display: grid; 
-					grid-template-columns: 1350px;	
-					margin-top: 50px; 
-					}
-
-div.menubar {display: none; }
-header nav ul {overflow: hidden; }
-header nav ul li { float: left; }
-
-.btnmenu
-.icon
-
-.boxindex1 {background: url("../imagenes/glaston.jpg");
-			background-repeat: no-repeat; 
-			background-size: cover;}
-
-.banda { height: 310px;
-padding-bottom: 0px;
-padding-right: 0px;
-padding-left: 0px;}
-
-
-
-.oso {padding: 10px;
-	margin-left: 10px;
-	display: inline-block;
-	width: 80px; 
-	height: 80px;
-align-content: center;}
-
-
-
-
-
-
-
-/* Style the navigation menu */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+.carr {margin-top: 160px; margin-left: 103px; margin-right: 107px;}
+.store {margin-top: 140px;}
+.item {width: 200px; height: 190px;}
