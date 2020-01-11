@@ -3,7 +3,7 @@ a { text-decoration: none; color: inherit; }
 a:hover { color: rgb(228, 216, 113); }
 
 
-header {background-color: white;}
+header {background-color: white; z-index: -1;}
 body {background-color: black; }
 span {color: red;}
 
@@ -48,80 +48,80 @@ header nav { float: right; padding-top: 15px;}
 footer .txt {text-align: left;}
 
 .logofooter {width: 135px; height: 20px; margin-left: 10px; float:right; }
-.footer {padding: 30px; background-color: white; margin-top: 70px;}
+.footer {padding: 30px; background-color: white; }
 
 /*fin footer*/
 
 
 /*IMÀGENES ART*/
 
-.art {	width: 350px; height: 230px;
+/*.art {	width: 350px; height: 230px;
 	display: inline-block;
 	position: relative;
 	box-sizing: content-box;
 	z-index: -1}
 	
-	.art:not(:first-child) { padding-left: 10%; }
+	.art:not(:first-child) { padding-left: 10%; }*/
 
 .header-aside-left { display: inline-block; }
 .header-aside-left h1 { display: inherit; vertical-align: top; padding-top: 30px; 
 
 }
 
-/*ponerle sass porque lo voy a usar en varios*/
-div.img-container {display: grid; 
+
+/*div.img-container {display: grid; 
 					grid-template-columns: 1350px;
    					grid-template-rows: 450px 450px 450px; 	
 					margin-top: 50px; 
-					}
+					}*/
 
-.boxindex1 {background: url("../imagenes/banda.jpg");
+.boxindex1 {display: grid; 
+			background: url("../imagenes/banda.jpg");
 			background-repeat: no-repeat; 
 			background-size: cover; 
 			height: 450px;}
 
-.boxindex2 {background: url(http://api.thumbr.it/whitenoise-361x370.png?background=050505ff&noise=626262&density=9&opacity=90);
-			background-repeat: no-repeat; 
+.boxindex2 {display: grid; 
+			background: url(http://api.thumbr.it/whitenoise-361x370.png?background=050505ff&noise=626262&density=9&opacity=90);
 			background-size: cover; 
-			height: 390px;
 			width: auto;}
 
-.boxindex3 {background: url("../imagenes/live3.jpg");
+.boxindex3 {display: grid; 
+			background: url("../imagenes/index/concierto.jpg");
 			background-repeat: no-repeat; 
 			background-size: cover; 
-			height: 450px;
 			margin-top: 50px;}
 
 h2.center {text-align: center;
-			margin-top: 25px;
+			margin-top: 45px;
 			color: white;
 			margin-bottom: 25px;}
 
-.flexindex {display: flex;
+/*.flexindex {display: flex;
 			flex-flow: row nowrap;
 		  	justify-content: space-between;
 			align-items: center;
-			margin: 20px 20px 20px 20px;}	
+			margin: 20px 20px 20px 20px;}	*/
 
-.flexindex p {width: 100%;
-	text-align: center;
+/*.flexindex p {width: 100%;*/
+	/*text-align: center;*/
 	/*display: none*/
-	font-size: 20px;
+	/*font-size: 20px;
 	color: red;
 	position: absolute;
 	left: 17%;
 	top: 280%;
-	transform: translate(-50%, -50%);}
+	transform: translate(-50%, -50%);}*/
 
- .flexindex:hover img {
+/* .flexindex:hover img {
 	opacity: 0.5;}
 
  .flexindex:hover p{
-	display: block;}
+	display: block;}*/
 
-.flexindex img {width: 360px; 
+/*.flexindex img {width: 360px; 
 				height: 315px;}
-
+*/
 /*tour index*/
 
 	.tour li { 
@@ -142,11 +142,11 @@ h2.center {text-align: center;
 	-webkit-border-radius: 31px 31px 31px 31px;}*/
 
 
-	.gradient-form {background: url("../imagenes/glaston.jpg"); background-repeat: no-repeat; background-size: cover;
-	margin: 30px; 
-	padding-top: 1px;
-	-moz-border-radius: 31px 31px 31px 31px;
-	-webkit-border-radius: 31px 31px 31px 31px;}
+	.gradient-form {background: url("../imagenes/shaped.jpeg"); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+	text-align: center;
+	height: auto;	}
 
 
 
@@ -181,7 +181,7 @@ to {opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(
  .tapa {width: 250px; margin-left: -45px; margin-top: 50px; 
 -webkit-border-radius: 20px 20px 20px 20px;}
 
- .tapadisco {width: 300px; height: 300px; margin-left: 18px; margin-top: 45px; 
+ .tapadisco {width: 300px; height: 300px; margin-left: 40px; margin-top: 45px; 
 -webkit-border-radius: 20px 20px 20px 20px;}
 
  .txtdisco {color: red;
@@ -247,5 +247,39 @@ padding: 20px 0px;}
 /*INDEX*/
 
 .carr {margin-top: 160px; margin-left: 103px; margin-right: 107px;}
-.store {margin-top: 140px;}
+.store {margin-top: 92px;}
+.space {margin-top: 140px;}
 .item {width: 200px; height: 190px;}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 174%;
+    transform: translate(-50%, -50%);
+color: white;}
+
+a:hover img {
+	opacity: 0.5;
+    filter: alpha(opacity=50);}
+
+a:hover p{
+	display: block;}
+
+.vuelta {list-style: none; text-align: center; }
+ul.vuelta li {display: inline;}
+ul.vuelta li+li:before {
+  padding: 8px;
+  color: white;
+  content: "/\00a0";}
+
+ul.vuelta li a {color: white;}
+ul.vuelta li a:hover {text-decoration: underline; }
+
+.flex {display: flex;
+
+	flex-wrap: wrap;
+ 	justify-content: space-between;
+
+ 	width: 800px;
+ 	margin-left: 300px;}
+
