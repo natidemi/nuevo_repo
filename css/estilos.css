@@ -2,8 +2,10 @@
 a { text-decoration: none; color: inherit; }
 a:hover { color: rgb(228, 216, 113); }
 
+body { font-family: "Poppins", sans-serif; }
 
-header {background-color: white; z-index: -1;}
+header {background-color: white; opacity: 0.9; }
+
 body {background-color: black; }
 span {color: red;}
 
@@ -13,10 +15,11 @@ padding-top: 20px;}
 
 /*menu header*/ 
 
-header nav { float: right; padding-top: 15px;}
+nav { float: right; padding-top: 15px;}
 
-	li { 
+nav	li { 
 	font-size: 17px; 
+	text-align: center;
 	color: #E8F6E7;
 	display: inline-block;
 	text-decoration: none;
