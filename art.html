@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <!-- icons menu -->
     <script src="https://kit.fontawesome.com/3e3bae40ea.js" crossorigin="anonymous"></script>
 <!-- icono pestaña -->
@@ -14,8 +13,7 @@
 <!-- google font -->
    <link href="https://fonts.googleapis.com/css?family=Alatsi|Poppins&display=swap" rel="stylesheet">
 <!-- mis estilos -->
-   <link rel="stylesheet" href="css/estilos.css" />
-   <link rel="stylesheet" href="css/styles.css"/>
+   <link rel="stylesheet" type="text/css" href="css/estilos.css">
 <!-- java -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -25,248 +23,140 @@
 </head>
 
 <body>
-
+   
     <header class="fixed-top">
         <div class="header-aside-left">
-         <a href="index.html"> <img class="oso" src="imagenes/logo.png" alt="logo radiohead" class="img-fluid" max-width: 100% height: auto></a>
-            <h1 class="txt inlineblock animacion">Radiohead + <span>Stanley</span></h1>
+         <a href="index.html"> <img class="oso" src="imagenes/logo.png" alt="isologo radiohead oso"></a>
+         <h1 class="animacion"><b>A R T</b></h1>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-black">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        </button>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      
-      <li class="nav-item"> <!-- este active hace que el home este en color negro -->
-        <a class="nav-link" href="index.html"><i class="fas fa-house-damage"></i><br>Home <span class="sr-only">(current)</span></a>
+    <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item"> 
+        <a class="nav-link" href="index.html"><i class="fas fa-house-damage"></i><br>H O M E</a>
       </li>
      
       <li class="nav-item">
-        <a class="nav-link" href="discografia.html"><i class="fas fa-compact-disc"></i><br>Discography</a>
+        <a class="nav-link" href="discografia.html"><i class="fas fa-compact-disc"></i><br>M U S I C</a>
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link" href="art.html"><i class="fas fa-palette"></i><br>Art</a>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="tour.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ticket-alt"></i><br>Tour</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Usa</a>
-          <a class="dropdown-item" href="#">Mexico</a>
-          <!-- <div class="dropdown-divider"></div> -->
-          <a class="dropdown-item" href="#">UK</a>
-        </div>
+        <a class="nav-link" href="art.html"><i class="fas fa-palette"></i><br>A R T</a>
       </li>
 
      <li class="nav-item">
-        <a class="nav-link" href="contacto.html"><i class="fas fa-comments"></i><br>Contact Us</a>
+        <a class="nav-link" href="store.html"><i class="fas fa-shopping-bag"></i><br>S T O R E</a>
       </li>
 
-    <li class="nav-item">
-        <a class="nav-link" href="store.html"><i class="fas fa-shopping-bag"></i><br>Store</a>
-      </li>
+     <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="contacto.html" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-comments"></i><br>J O I N</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="https://es-la.facebook.com/radiohead/" target="_blank">Facebook</a>
+      <a class="dropdown-item" href="https://www.instagram.com/radiohead/?hl=es" target="_blank">Instagram</a>
+      <a class="dropdown-item" href="contacto.html">Contact Form</a>
+      </div>
+  </li>
 
 
-<!--       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li> -->
-    </ul>
 
+  </ul>
   </div>
 </nav>
+</header>
 
 
-
-    </header>
-
-
-<!-- <div class="card" style="width: 18rem;">
-  <img src="imagenes/art/stan.jpg" class="card-img-top" alt="Stanley Donwood">
-  <div class="card-body">
-    <h5 class="card-title">Stanley <span>Donwood</span></h5>
-    <p class="card-text">Stanley Donwood is an artist and writer who has collaborated with Radiohead since the release of their single 'My Iron Lung' in 1994. Having met frontman Thom Yorke at the University of Exeter, he has gone on to create all the band's artwork to date.</p>
-     </div>
-</div> -->
-
-
-
-
-<div class=" space card-columns">
+<div class="space card-columns top">
   <div class="card">
-    <img src="imagenes/art/stan.jpg" class="card-img-top" alt="stanley art">
+    <img src="imagenes/art/stan.jpg" class="card-img-top" alt="stanley donwood face photo">
     <div class="card-body">
       <h5 class="card-title">Stanley <span>Donwood</span></h5>
       <p class="card-text">Stanley Donwood is an artist and writer who has collaborated with Radiohead since the release of their single 'My Iron Lung' in 1994. Having met frontman Thom Yorke at the University of Exeter, he has gone on to create all the band's artwork to date.</p>
     </div>
   </div>
+
+
+  <div class="card text-white text-center p-3 bg-dark">
+    <blockquote class="blockquote mb-0 card-body ">
+      <p>I really love it when you get that strange combination of feelings that play against each other.</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted text-white text-center">
+          <cite title="Source Title"> Stanley Donwood</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+
+
   <div class="card">
-    <img src="imagenes/art/dark.jpg" class="card-img-top" alt="Thom York and Stanley Donwood">
+    <img src="imagenes/art/dark.jpg" class="card-img-top" alt="thom york and stanley donwood">
   </div>
   <div class="card">
-    <img src="imagenes/art/ThomStanley.jpg" class="card-img-top" alt="Thom York and Stanley Donwood">
+    <img src="imagenes/art/thomstanley.jpg" class="card-img-top" alt="thom york and stanley donwood">
     <div class="card-body">
       <h5 class="card-title">Thom & Stanley</h5>
       <p class="card-text">London, 2014</p>
     </div>
   </div>
-  <div class="card bg-primary text-white text-center p-3">
-    <blockquote class="blockquote mb-0">
-      <p>I really love it when you get that strange combination of feelings that play against each other.</p>
-      <footer class="blockquote-footer text-white">
-        <small>
-          Stanley <cite title="Source Title">Donwood</cite>
-        </small>
-      </footer>
-    </blockquote>
-  </div>
-  <div class="card text-center">
-       <img src="imagenes/art/hollywood.jpg" class="card-img-top" alt="...">
-  </div>
+
+
+
+
+
   <div class="card text-center">
     <div class="card-body">
       <h5 class="card-title">See more about Stanley art</h5>
-        <a href="https://www.instagram.com/stanleydonwood/" class="card-link btn btn-primary">Go to Instagram</a> 
-    <a href="http://www.slowlydownward.com/" class="card-link btn btn-primary">Go to Website</a>
-    </div>
+        <a href="https://www.instagram.com/stanleydonwood/" target="_blank" class="card-link btn btn-secondary">Go to Instagram</a> 
+    <a href="http://www.slowlydownward.com/" target="_blank" class="card-link btn btn-secondary">Go to Website</a>
+    </div> </div>
+
+
+  <div class="card text-center">
+       <img src="imagenes/art/hollywood.jpg" class="card-img-top" alt="hollywood painting by stanley donwood">
   </div>
 
+ <div class="card text-center">
+       <img src="imagenes/art/arborealis.png" class="card-img-top" alt="dark trees painting by stanley donwood">
+  </div>
+
+
+<div class="card">
+    <img src="imagenes/art/hotels.jpg" class="card-img-top" alt="abstract painting by stanley donwood">
+  </div>
+
+
+
+  
+  <div class="card">
+    <img src="imagenes/art/thomstan.jpg" class="card-img-top" alt="thom york and stanley donwood">
+  </div>
 
   <div class="card">
-    <img src="imagenes/art/thomart.jpg" class="card-img-top" alt="...">
+    <img src="imagenes/art/wall.jpg" class="card-img-top" alt="abstract painting by stanley donwood">
   </div>
 
-    <div class="card">
-    <img src="imagenes/art/choose.jpg" class="card-img-top" alt="Thom York and Stanley Donwood">
+  <div class="card">
+    <img src="imagenes/art/deceiver.jpg" class="card-img-top" alt="abstract painting by stanley donwood">
   </div>
+   
+ <div class="card">
+    <img src="imagenes/art/third.jpg" class="card-img-top" alt="abstract painting by stanley donwood">
+  </div>
+
+
+
   </div>
 </div>
 
 
-
-
-    <!-- <div id="carouselExampleCaptions" class="centrado  carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="8"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="9"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="10"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="11"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="12"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="imagenes/art/santa.jpg" class="d-block w-100" alt="santa monica">
-          <div class="carousel-caption d-none d-md-block">
-            <h5><span class="d-inline p-2 bg-white text-dark">Santa Monica</span></h5>
-            <p><span class="d-inline p-2 bg-white text-dark">150cm x 150cm. Acrylic and blackboard paint on canvas. 2003.</span></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="imagenes/art/pacific.jpg" class="d-block w-100" alt="Pacific coast">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Pacific coast</h5>
-            <p>150cm x 150cm. Acrylic and blackboard paint on canvas. 2003.</p>
-          </div>
-        </div>
-           <div class="carousel-item">
-          <img src="imagenes/art/wall.jpg" class="d-block w-100" alt="First Minos wall">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First Minos wall</h5>
-            <p>168cm x 168cm. Acrylic on canvas. 2000.</p>
-          </div>
-        </div>
-           <div class="carousel-item">
-          <img src="imagenes/art/second.jpg" class="d-block w-100" alt="Second Minos wall">
-          <div class="carousel-caption d-none d-md-block">
-            <h5><span class="d-inline p-2 bg-white text-dark">Second Minos wall</span></h5>
-            <p><span class="d-inline p-2 bg-white text-dark">168cm x 168cm. Acrylic on canvas. 2000.</span></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="imagenes/art/third.jpg" class="d-block w-100" alt="Third Minos wall">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third Minos wall</h5>
-            <p>168cm x 168cm. Acrylic on canvas. 2000.</p>
-          </div>
-        </div>
-           <div class="carousel-item">
-          <img src="imagenes/art/war.jpg" class="d-block w-100" alt="War village">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>War village</h5>
-            <p>168cm x 84cm. Acrylic on canvas. 2000.</p>
-          </div>
-        </div>
-           <div class="carousel-item">
-          <img src="imagenes/art/hotels.jpg" class="d-block w-100" alt="Hotels and a swimming pool">
-          <div class="carousel-caption d-none d-md-block">
-            <h5><span class="d-inline p-2 bg-white text-dark">Hotels and a swimming pool</span></h5>
-            <p><span class="d-inline p-2 bg-white text-dark">168cm x 168cm. Acrylic and gravel on canvas. 2000.</span></p>
-          </div>
-        </div>
-           <div class="carousel-item">
-          <img src="imagenes/art/trade.jpg" class="d-block w-100" alt="Trade center">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Trade center</h5>
-            <p>168cm x 168cm. Acrylic on canvas. 2000.</p>
-          </div>
-        </div>
-           <div class="carousel-item">
-          <img src="imagenes/art/saturday.jpg" class="d-block w-100" alt="Get out before Saturday">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Get out before Saturday</h5>
-            <p>168cm x 168cm. Acrylic on canvas. 2000.</p>
-          </div>
-        </div>
-           <div class="carousel-item">
-          <img src="imagenes/art/eyes.jpg" class="d-block w-100" alt="Avert your eyes">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Avert your eyes</h5>
-            <p>168cm x 168cm. Acrylic on canvas. 2000.</p>
-          </div>
-        </div>
-           <div class="carousel-item">
-          <img src="imagenes/art/nemesis.jpg" class="d-block w-100" alt="Residential Nemesis">
-          <div class="carousel-caption d-none d-md-block">
-            <h5><span class="d-inline p-2 bg-white text-dark">Residential Nemesis</span></h5>
-            <p><span class="d-inline p-2 bg-white text-dark">168cm x 168cm. Acrylic on canvas. 1999.</span></p>
-          </div>
-        </div>
-           <div class="carousel-item">
-          <img src="imagenes/art/redsnow.jpg" class="d-block w-100" alt="Red snow. Bootprints">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Red snow. Bootprints</h5>
-            <p>168cm x 168cm. Acrylic on canvas. 1999.</p>
-          </div>
-        </div>
-             </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div> -->
-
 <footer class="footer">
 
 <img class="logofooter" src="imagenes/footer.png" alt="logo radiohead escrito">
-<p class="txt"> W.A.S.T.E. Information Service ~ Since 1991</p>
+<p> W.A.S.T.E. Information Service ~ Since 1991<br>NDM 2020 ©</p>
 </footer>
-
 </body>
-
 </html>

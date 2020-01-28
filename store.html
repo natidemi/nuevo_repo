@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <!-- icons menu -->
     <script src="https://kit.fontawesome.com/3e3bae40ea.js" crossorigin="anonymous"></script>
 <!-- icono pestaña -->
@@ -14,147 +13,112 @@
 <!-- google font -->
    <link href="https://fonts.googleapis.com/css?family=Alatsi|Poppins&display=swap" rel="stylesheet">
 <!-- mis estilos -->
-   <link rel="stylesheet" href="css/estilos.css" />
-   <link rel="stylesheet" href="css/styles.css"/>
+   <link rel="stylesheet" type="text/css" href="css/estilos.css">
 <!-- java -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <title>Radiohead</title>
+    <title>Radiohead - Store</title>
 </head>
 
 <body>
-
+   
     <header class="fixed-top">
         <div class="header-aside-left">
-         <a href="index.html"> <img class="oso" src="imagenes/logo.png" alt="logo radiohead" class="img-fluid" max-width: 100% height: auto></a>
-            <h1 class="txt inlineblock animacion">Store</h1>
+         <a href="index.html"> <img class="oso" src="imagenes/logo.png" alt="isologo radiohead oso"></a>
+         <h1 class="animacion"><b>S T O R E</b></h1>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-black">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        </button>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      
-      <li class="nav-item"> <!-- este active hace que el home este en color negro -->
-        <a class="nav-link" href="index.html"><i class="fas fa-house-damage"></i><br>Home <span class="sr-only">(current)</span></a>
+    <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item"> 
+        <a class="nav-link" href="index.html"><i class="fas fa-house-damage"></i><br>H O M E</a>
       </li>
      
       <li class="nav-item">
-        <a class="nav-link" href="discografia.html"><i class="fas fa-compact-disc"></i><br>Discography</a>
+        <a class="nav-link" href="discografia.html"><i class="fas fa-compact-disc"></i><br>M U S I C</a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="art.html"><i class="fas fa-palette"></i><br>Art</a>
+        <a class="nav-link" href="art.html"><i class="fas fa-palette"></i><br>A R T</a>
       </li>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="tour.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ticket-alt"></i><br>Tour</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Usa</a>
-          <a class="dropdown-item" href="#">Mexico</a>
-          <!-- <div class="dropdown-divider"></div> -->
-          <a class="dropdown-item" href="#">UK</a>
-        </div>
+     <li class="nav-item active">
+        <a class="nav-link" href="store.html"><i class="fas fa-shopping-bag"></i><br>S T O R E</a>
       </li>
 
-     <li class="nav-item">
-        <a class="nav-link" href="contacto.html"><i class="fas fa-comments"></i><br>Contact Us</a>
-      </li>
+     <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="contacto.html" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-comments"></i><br>J O I N</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="https://es-la.facebook.com/radiohead/" target="_blank">Facebook</a>
+      <a class="dropdown-item" href="https://www.instagram.com/radiohead/?hl=es" target="_blank">Instagram</a>
+      <a class="dropdown-item" href="contacto.html">Contact Form</a>
+      </div>
+  </li>
 
-    <li class="nav-item active">
-        <a class="nav-link" href="store.html"><i class="fas fa-shopping-bag"></i><br>Store</a>
-      </li>
 
 
-<!--       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li> -->
-    </ul>
-
+  </ul>
   </div>
 </nav>
+</header>
 
 
-
-    </header>
-
-
-
-
-
-<div class="store accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Vinyls
-        </button>
-      </h2>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        
-<img class="item" src="imagenes/store/anima.jpg">
-<p><span>From</span>$20.00</p>
-<button type="button" class="btn btn-dark">Buy</button>
-
-
-
-
+    <div class="row row-cols-1 row-cols-md-2 top">
+  <div class="col mb-4">
+    <div class="card h-100 border-primary" style="width: 25rem;">
+      <img src="imagenes/store/vinyls.jpg" class="card-img-top" alt="radiohead vinyls">
+      <div class="card-body text-primary">
+        <h5 class="card-title">Vinyls</h5>
+        <p class="card-text">This is a piece of a Radiohead ½ inch master tape from an actual recording session.</p>
+        <a href="https://store-us.wasteheadquarters.com/collections/audio-visual/products/a-moon-shaped-pool-special-edition-1" class="btn btn-primary">Buy</a>
       </div>
     </div>
   </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          T-Shirts
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+  <div class="col mb-4">
+    <div class="card h-100 border-secondary" style="width: 25rem;">
+      <img src="imagenes/store/posters.jpg" class="card-img-top" alt="radiohead posters">
+      <div class="card-body text-secondary">
+        <h5 class="card-title">Posters</h5>
+        <p class="card-text">A2 Poster, 594mm x 420mm.</p>
+        <a href="https://store-us.wasteheadquarters.com/collections/books-posters/products/2017-world-tour-poster" class="btn btn-secondary">Buy</a>
       </div>
     </div>
   </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Posters
-
-        </button>
-      </h2>
+  <div class="col mb-4">
+    <div class="card h-100 border-success" style="width: 25rem;">
+      <img src="imagenes/store/shirt.jpg" class="card-img-top" alt="radiohead shirt">
+      <div class="card-body text-success">
+        <h5 class="card-title">Clothes</h5>
+        <p class="card-text">100% Organic ring-spun Combed Cotton</p>
+        <a href="https://store-us.wasteheadquarters.com/collections/clothes/products/ice-caps-long-sleeve-black-t-shirt" class="btn btn-success">Buy</a>
+      </div>
     </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100 border-warning" style="width: 25rem;">
+      <img src="imagenes/store/songbook.jpg" class="card-img-top" alt="radiohead songbook">
+      <div class="card-body text-warning">
+        <h5 class="card-title">Songbooks</h5>
+        <p class="card-text">Spanning their entire career to date, each song is transcribed for electric guitar in standard notation and tab, with melody line and chord boxes.</p>
+        <a href="https://store-us.wasteheadquarters.com/collections/songbooks/products/radiohead-the-electric-guitar-songbook" class="btn btn-warning">Buy</a>
       </div>
     </div>
   </div>
 </div>
 
 
+    <footer class="footer">
 
-
-
-
-
-
-<footer class="footer">
-
-<img class="logofooter" src="imagenes/footer.png" alt="logo radiohead escrito" width="200px" height="50px">
-<p class="txt"> W.A.S.T.E. Information Service ~ Since 1991</p>
-</footer>
- 
-
+        <img class="logofooter" src="imagenes/footer.png" alt="logo radiohead escrito">
+        <p> W.A.S.T.E. Information Service ~ Since 1991<br>NDM 2020 ©</p>
+    </footer>
 </body>
+
 </html>
