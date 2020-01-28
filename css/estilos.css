@@ -79,6 +79,14 @@ li {
     margin-right: 5px;
 }
 
+.navbar {
+    margin-top: 14px;
+}
+
+.dropdown-menu {
+    left: -70px;
+}
+
 nav ul li ul {
     display: none;
 }
@@ -105,6 +113,15 @@ nav ul li ul li:hover {
     margin-top: 15px;
     width: 90px;
     height: 80px;
+}
+
+.content-card {
+    margin-top: 10px;
+}
+
+.content-card-store {
+    margin: 140px 0 20px 0;
+    padding: 0 5px 0 20px;
 }
 
 @-webkit-keyframes fadeInLeft {
@@ -196,7 +213,6 @@ footer {
 
 /*fin discografía*/
 
-
 .boxindex2 {
     display: grid;
     background-color: black;
@@ -235,13 +251,13 @@ h2.center {
 /*fin index*/
 
 .gradient-form {
+    padding-top: 200px;
     height: 700px;
-    background: url("../imagenes/shaped.jpeg");
+    background: url("../imagenes/shapedfondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
 }
-
 
 a:hover .tapa {
     opacity: 0.5;
@@ -252,5 +268,41 @@ a:hover p {
     display: block;
 }
 
-.fondomusic {background: url("../imagenes/fondo.jpg"); }
-.top {margin-top: 170px;}
+.fondomusic {
+    background: url("../imagenes/fondo.jpg");
+}
+
+.top {
+    margin-top: 170px;
+}
+
+.form-contact input,
+.form-contact select {
+    height: 60px;
+}
+
+.form-contact .btn {
+    padding: 20px 50px;
+}
+
+.custom-control-label {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        right: 0;
+        position: absolute;
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+        top: 56px;
+        min-width: 250px;
+        padding: 0 30px;
+        background-color: #FFF;
+    }
+}
