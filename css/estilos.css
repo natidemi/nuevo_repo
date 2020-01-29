@@ -226,6 +226,7 @@ footer {
     background-size: cover;
     margin-top: 50px;
     color: white;
+    width: auto;
 }
 
 h2.center {
@@ -252,7 +253,7 @@ h2.center {
 
 .gradient-form {
     padding-top: 200px;
-    height: 700px;
+    height: auto;
     background: url("../imagenes/shapedfondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
